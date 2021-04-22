@@ -1,4 +1,4 @@
-# Project Managemant Reporting Tool
+# Project Management Reporting Tool
   Software intended to extract, process, transform, store and display data, received from Breeze API and TCRS data.
 
 ### Context and problem statement
