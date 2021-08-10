@@ -15,7 +15,7 @@ import psycopg2
 # In[2]:
 
 
-projects = requests.get('https://api.breeze.pm/V2/projects.json?api_token=zm5rrkdMjZsf-Mv_pPTi')
+projects = requests.get('')
 print(projects.status_code)
 
 
@@ -26,7 +26,7 @@ cards = {}
 not_read_projects = []
 all_projects = []
 for project in projects.json():    
-    url = str(project['id']).join(('https://api.breeze.pm/V2/projects/', '/cards.json?api_token=zm5rrkdMjZsf-Mv_pPTi'))    
+    url = str(project['id']).join(('', ''))    
     print(url)    
     card = requests.get(url)
     print(card.status_code)
